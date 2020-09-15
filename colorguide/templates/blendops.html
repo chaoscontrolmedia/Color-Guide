@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Blend Operations</title>  
+{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+    {% for blend in blend_modes %}
+    <p class="bg-info" style=
+    "background-color:#000000; 
+    margin: 5px;
+    font-size:16px;" >
+        {{ blend.blenddescription() }}
+    </p>
+        
+    {% endfor %}
+
+
+
+
+{% endblock %}

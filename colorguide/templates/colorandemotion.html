@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Home</title>  
+{% endblock %}
+
+{% block content %}
+
+
+
+
+    <h2>Colors and Emotion</h2>
+    {% for color in colorlist %}
+    <p class="bg-info" style=
+    "background-color:#000000; 
+    margin: 5px;
+    font-size:16px;" >
+        {{ color.description() }}
+    </p>
+        
+    {% endfor %}
+    
+
+
+{% endblock %}
